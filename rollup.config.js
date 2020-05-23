@@ -1,0 +1,12 @@
+import vue from 'rollup-plugin-vue'
+export default {
+  input: 'src/index.js',
+  output: {
+    file: 'dist/index.js',
+    format: 'esm'
+  },
+  plugins: [
+    vue(),
+  ],
+  external: ['vue']
+};
